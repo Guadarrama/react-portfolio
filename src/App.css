@@ -4,29 +4,64 @@
   vertical-align: center;
   padding-top: 35vh;
 }
+.title-wrap h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+}
+
+.title-wrap h2 {
+  font-size: 2.75rem;
+  line-height: 1.3;
+  margin: 0 0 1.5rem 0;
+}
+
+.title-wrap h3 {
+  font-size: 2.25rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.title-wrap h4 {
+  font-size: 2rem;
+}
 .section-1{
   text-align: center;
   height: 97vh;
 }
-
-.white-button{
+.custom-white-link{
   text-decoration: none;
+  color: black;
+  margin: 50px;
   background-color: white;
   border-radius: 10px;
-  border-style: solid;
-  border-color:lightskyblue;
+  border-style: 1px solid;
+  border-color:rgb(79, 89, 95);
   padding: 10px;
   box-shadow: 0 0 2px black;
 
 }
-.white-button:hover{
+.custom-white-link:hover{
   text-decoration: none;
   background-color: rgb(231, 246, 255);
   border-radius: 10px;
-  border-style: solid;
+  border-style: 2px solid;
   border-color:lightskyblue;
   padding: 10px;
   box-shadow: 0 0 5px lightskyblue;
+  color: black;
+}
+#profile-photo{
+  width: 100%;
+  box-shadow: 0 5px 15px 0 black;
+}
+.box-a1{
+  background-color: #f7f7f7;
+  background-size: 8px 8px;
+  background-image:  repeating-linear-gradient(to right, #dfe1ff, #dfe1ff 0.4px, #f7f7f7 0.4px, #f7f7f7);
+
+}
+.col-sm-12{
+  text-align: center;
 }
 
 /* FIREFLY BACKGROUND */
