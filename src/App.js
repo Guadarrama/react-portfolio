@@ -253,8 +253,8 @@ const Block = () => {
   )
 }
 function App() {
-  const titleRef = useRef()
-  handleBackClick = () =>{titleRef.current.scrollIntoView({ behavior:'smooth' })}
+  // const titleRef = useRef()
+  // handleBackClick = () =>{titleRef.current.scrollIntoView({ behavior:'smooth' })}
 
   return (
     <body>
