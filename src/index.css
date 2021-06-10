@@ -60,7 +60,7 @@ h6 {
 .title-wrap{
   color: white;
   vertical-align: center;
-  padding-top: 18vh;
+  padding-top: 10vh;
 }
 .title-wrap h1 {
   font-size: 5rem;
@@ -180,12 +180,11 @@ polygon.arrow-top {
 /*SYMPLISTIC NAVBAR EDITS*/
 
 .navbar {
-  background-color: red;
   font-family: "Montserrat", sans-serif;
   border: none;
   box-shadow: 0 0 25px black;
 }
-
+/* 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   color: black;
 }
@@ -214,7 +213,7 @@ polygon.arrow-top {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: black;
-}
+} */
 
 
 /*FOOTER*/

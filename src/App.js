@@ -4,7 +4,7 @@ import profile from './photos/portrait.png';
 import petshop from './photos/petShop-sample.gif';
 import toolShop from './photos/toolShop-sample.gif';
 import headerProfile from './photos/header-profile.jpg';
-import React from 'react';
+import React, {useState} from 'react';
 import { Linkedin } from 'react-feather';
 import { GitHub } from 'react-feather';
 import { FileText } from 'react-feather';
@@ -33,24 +33,37 @@ const Background = () =>{
   )
 }
 
-const NavBar = () =>{
+const NavigationBar = props =>{
+
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return(
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span>≡</span>
+          {/* <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> */}
+          <button class="custom-toggle navbar-toggle" type="button" data-toggle="collapse" aria-expanded={!isNavCollapsed ? true : false} aria-label="+" onClick={handleNavCollapse}>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">C.BARRON</div>
+          <a class="navbar-brand" href="https://guadarrama.github.io/" >C.BARRON</a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="1">Barron</a></li>
-            <li><a href="1">About Me</a></li>
-            <li><a href="2">Projects</a></li>
-            <li><a href="3">Résumé</a></li>
-            <li><a href="4"><GitHub size={20} /></a></li>
-            <li><a href="4"><Linkedin size={20} /></a></li>
+        {/* <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> */}
+        <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarsExample09">
+          <ul class="nav navbar-nav navbar-right dropdown">
+            <li><a href="#barron">Barron</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume-data">Résumé</a></li>
+            <li><a href="https://github.com/Guadarrama">
+              <GitHub size={20} />
+              </a></li>
+            <li><a href="https://www.linkedin.com/in/carlos-barron-guadarrama-800743194/">
+              <Linkedin size={20} />
+              </a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +72,7 @@ const NavBar = () =>{
 }
 const HeaderPage = () =>{
   return(
-    <div className="section-1">
+    <div className="section-1" id="barron">
     <div className="title-wrap">
       <img src={headerProfile} id="round-profile" alt="header-profile"/>
       <h1>Carlos Barron</h1>
@@ -72,7 +85,7 @@ const HeaderPage = () =>{
       <h5><em>FullStack Developer with experience in three different stacks</em></h5>
       <p>
         <div class="content">
-          <a href="scroll">
+            <a href="scroll" className="fadeIn">
             <svg id="more-arrows">
               <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
               <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
@@ -88,7 +101,7 @@ const HeaderPage = () =>{
 const AboutMe = () =>{
   return(
 
-      <div className="container">
+      <div className="container" id="aboutMe">
         <div className="box-a1">
           <div className="row">
             <div className="col-lg-12">
@@ -142,7 +155,7 @@ const AboutMe = () =>{
 
 const Projects = () => {
   return(
-    <div className="container">
+    <div className="container" id="projects">
       <div className="box-a1">
         <div className="row">
           <div className="col-lg-12">
@@ -234,9 +247,13 @@ const ContactMe =() =>{
                 <a href="mailto:albertc.barron@gmail.com">albertc.barron@gmail.com</a>
               </section>
               <section>
-                <h4>Social</h4>
-                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carlos-barron-guadarrama-800743194/" class="">linkedin</a>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/Guadarrama" class="">github</a>
+                <h4>Other External links __</h4>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Guadarrama">
+                <GitHub size={20} />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carlos-barron-guadarrama-800743194/">
+                <Linkedin size={20} />
+              </a>
               </section>
             </section>
           </footer>
@@ -259,7 +276,7 @@ function App() {
   return (
     <body>
       <Background/>
-      <NavBar/>
+      <NavigationBar/>
       <HeaderPage />
       <AboutMe />
       <Block/>
