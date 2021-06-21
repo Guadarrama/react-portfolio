@@ -85,7 +85,7 @@ const HeaderPage = () =>{
       <h5><em>FullStack Developer with experience in three different stacks</em></h5>
       <p>
         <div class="content">
-            <a href="scroll" className="fadeIn">
+            <a href="#projects" className="fadeIn">
             <svg id="more-arrows">
               <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
               <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
@@ -129,12 +129,18 @@ const AboutMe = () =>{
                       become less and less economically viable.
                     </p>
                     <p>
+                      I have been a technical consultant for small businesses since I graduated college(
+                        for about 4-5 years
+                      ). But my
+                      career preference has always been in software development.
+                    </p>
+                    <p>
                       In my free time I like to learn and read a lot. I taught myself a number of things
                       such as doing mechanic work on my car and basic carpentry doing small projects around my 
                       house.
                     </p>
                     <p>
-                      Below you can find some of my projects and view my resume.
+                      Below you can find some relevant development projects and view my resume.
                     </p>
                   </div>
                   <a href="rr" className="btn w-link">View Résumé</a>
