@@ -78,9 +78,9 @@ const HeaderPage = () =>{
       <h1>Carlos Barron</h1>
       <h2>Fullstack Web Developer</h2>
       <h5>
-        <a href="github" className="icon" ><GitHub size={20} /></a>
-        <a href="linkedin" className="icon" ><Linkedin size={20} /></a>
-        <a href="resume" className="icon" ><FileText size={20}/></a>
+        <a href="https://github.com/Guadarrama/toolShop" className="icon" ><GitHub size={20} /></a>
+        <a href="https://www.linkedin.com/in/carlos-barron-guadarrama-800743194/" className="icon" ><Linkedin size={20} /></a>
+        <a href="#resume-data" className="icon" ><FileText size={20}/></a>
       </h5>
       <h5><em>FullStack Developer with experience in three different stacks</em></h5>
       <p>
