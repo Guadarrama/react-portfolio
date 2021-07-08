@@ -48,7 +48,7 @@ const NavigationBar = props =>{
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://guadarrama.github.io/" >C.BARRON</a>
+          <a class="navbar-brand" href="#barron" >C.BARRON</a>
         </div>
         {/* <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> */}
         <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarsExample09">
