@@ -32,7 +32,6 @@ const Background = () =>{
     </div>
   )
 }
-
 const NavigationBar = props =>{
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -82,7 +81,8 @@ const HeaderPage = () =>{
         <a href="https://www.linkedin.com/in/carlos-barron-guadarrama-800743194/" className="icon" ><Linkedin size={20} /></a>
         <a href="#resume-data" className="icon" ><FileText size={20}/></a>
       </h5>
-      <h5><em>FullStack Developer with experience in three different stacks</em></h5>
+      <h5><em>FullStack Developer with experience in three different stacks</em></h5> 
+      <h5><em> &lt;&lt;  django, ASP.NET, MERN(ReactJS, NodeJS) &gt;&gt;</em></h5>
       <p>
         <div class="content">
             <a href="#projects" className="fadeIn">
@@ -125,7 +125,9 @@ const AboutMe = () =>{
                       Since then I've been fiddling about with a number of technologies, mainly
                       as a Web Developer.
                       When I graduated college I worked with my dad as a technician; fixing computers for small businesses and 
-                      working with small local networks. I have chosen to leave this occupation because every year it has
+                      working with small local networks. I have chosen to leave this occupation because every year (
+                      computer repair and network configuration specifically
+                      ) has
                       become less and less economically viable.
                     </p>
                     <p>
@@ -143,7 +145,7 @@ const AboutMe = () =>{
                       Below you can find some relevant development projects and view my resume.
                     </p>
                   </div>
-                  <a href="rr" className="btn w-link">View Résumé</a>
+                  <a href="#resume-data" className="btn w-link">View Résumé</a>
                   <div className="p-3">___</div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
